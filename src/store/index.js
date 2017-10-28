@@ -1,6 +1,6 @@
 ((() => {
 
-  var Vuex = window.Vuex
+  var Vuex = window.Vuex;
 
   const Store = new Vuex.Store({
     state: {
@@ -9,21 +9,21 @@
 
     mutations: {
       updateScore(state, score) {
-        state.score += score
+        state.score += score;
       },
       resetScore(state) {
-        state.score = 0
+        state.score = 0;
       }
     },
 
     actions: {
       updateScore(context, score) {
-        context.commit("updateScore", score)
+        context.commit("updateScore", score);
       },
       resetScore(context) {
-        context.commit("resetScore")
+        context.commit("resetScore");
       }
     },
-  })
-  window.store = Store
-}))()
+  });
+  window.store = Store;
+}))();
